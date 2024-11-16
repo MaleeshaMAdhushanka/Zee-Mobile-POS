@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Home Page</title>
 <body>
 <!--------------------------------start header-------------->
@@ -18,16 +20,13 @@
           
         </div>
          
-        <div class="page-Icon">
-            <img class="" style="width: 40px;" src="" alt="">
-           
-        </div>
+
 
         <ul>
-            <li><a href="#homePage" class="nav-link"><img src="/assets/img/8541853_home_icon.png" alt="">Dashboard</a></li>
-            <li><a href="#CustomerManage" class="nav-link"><img src="/assets/img/1564534_customer_man_user_account_profile_icon.png" alt="">Customer</a></li>
-            <li><a href="#ItemManage" class="nav-link"><img src="/assets/img/9004847_apps_application_mobile_device_app_icon (2).png" alt="">Item</a></li>
-            <li><a href="#OrderManage" class="nav-link orderManageBtn"><img src="/assets/img/7581523_order_confirmation_application_check_smartphone_icon.png" alt="">Orders</a></li>
+            <li><a href="#homePage" class="nav-link" style="color: lightblue;"><img src="/assets/img/8541853_home_icon.png" alt="HomeIcon">Dashboard</a></li>
+            <li><a href="#CustomerManage" class="nav-link" style="color: lightblue;"><img src="/assets/img/1564534_customer_man_user_account_profile_icon.png" alt="customer_icon">Customer</a></li>
+            <li><a href="#ItemManage" class="nav-link" style="color: lightblue;"><img src="/assets/img/9004847_apps_application_mobile_device_app_icon (2).png" alt="Iteam">Item</a></li>
+            <li><a href="#OrderManage" class="nav-link orderManageBtn" style="color: lightblue;"><img src="/assets/img/7581523_order_confirmation_application_check_smartphone_icon.png" alt="Orders">Orders</a></li>
         </ul>
     </header>
 
@@ -36,20 +35,28 @@
 <!--------------------------------Dashboard start-------------->
     <section id="homePage" >
     
-        <div>
-            
-            <div class="carousel">
-                <div class="carousel-inner">
-                    
-                    <div class="carousel-item active">
-                        <img src="/assets/istockphoto-877238326-1024x1024.jpg" alt="Image 1">
-                    </div>
-                    
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/img/digital-circle-circuit-blue-background-futuristic-technology.jpg" class="d-block w-100" alt="Image 1">
                 </div>
-                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                <div class="carousel-item">
+                    <img src="/assets/img/rendering-abstract-futuristic-background-with-glowing-neon-blue-orange-lights.jpg" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/img/3d-rendering-futuristic-background-with-geometric-shapes-colorful-neon-lights.jpg" class="d-block w-100" alt="Image 3">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
         <div class="counts">
             <div>
                 <div class="orders">
@@ -324,6 +331,7 @@
 <script type="module" src="Controller/CustomerController.js"></script>
 <script type="module" src="Controller/ItemController.js"></script>
 <script type="module" src="Controller/OrderController.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 
 $(document).ready(function(){ 
